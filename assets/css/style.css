@@ -1,33 +1,29 @@
 /* GENERAL */
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: 'Nerko One', cursive;
-  background-color: #ADD8E6;
+body {
+  font-family: "Nerko One", cursive;
+  background-color: #add8e6;
 }
 
-.clearfix{
-  content: '';
+.clearfix {
+  content: "";
   display: table;
   clear: both;
 }
 
-.container{
+.container {
   width: 65%;
   margin: 10px auto;
-  /* background-color: blue; */
 }
-
 /* /GENERAL */
 
 /* HEADER */
-
-header h1{
+header h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 5.5em;
@@ -35,67 +31,67 @@ header h1{
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
-
 /* /HEADER */
 
 /* MAIN */
-
-.table{
+.table {
   width: 100%;
-  /* height: 500px;
-  background-color: rgba(0, 0, 0, 0.5); */
 }
 
-.row{
+.row {
   width: 100%;
-  /* background-color: seagreen; */
   margin-bottom: 15px;
 }
 
-.row .card{
-  width: calc(100% / 4 - 14px);
-  margin: 7px;
+.row .card {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
   background-color: white;
   float: left;
-  border-radius: 2%;
+  border-radius: 5%;
   padding: 2%;
   text-align: center;
   font-size: 2em;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.card img{
-  width: 100%; 
+.card img {
+  width: 85%;
 }
 
-.card:hover{
+.card:hover {
   display: initial;
 }
 
-.layover{
+.layover {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url(../img/pattern.png);
-  background-size:contain;
-  border-radius: 2%;
+  background-size: contain;
 }
 
-.card:hover .layover{
+.card:hover .layover {
   display: none;
 }
 
-.card .card-text{
-  color: #E61986;
+.card .card-text {
+  color: #e61986;
 }
 
-.card:hover .card-text{
-  color: #E67919;
+.card:hover .card-text {
+  color: #e67919;
 }
-
-
-
 /* MAIN */
+
+/* FOOTER */
+footer p {
+  text-align: center;
+  font-size: 19px;
+}
+/* /FOOTER */
