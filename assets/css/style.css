@@ -17,12 +17,13 @@ body {
 }
 
 .container {
-  width: 65%;
+  width: 60%;
   margin: 10px auto;
 }
 /* /GENERAL */
 
 /* HEADER */
+
 header h1 {
   text-align: center;
   text-transform: uppercase;
@@ -43,27 +44,26 @@ header h1 {
   margin-bottom: 15px;
 }
 
-.row .card {
-  width: calc(100% / 4 - 20px);
-  margin: 10px;
-  background-color: white;
+.card{
+  width: calc(100% / 4 - 14px);
+  height: 200px;
   float: left;
+  margin: 7px;
+  background-color: white;
   border-radius: 5%;
   padding: 2%;
-  text-align: center;
-  font-size: 2em;
-  position: relative;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.card img {
-  width: 85%;
+.card img{
+  width: 100%;
 }
 
-.card:hover {
-  display: initial;
+.card-text{
+  text-align: center;
 }
 
 .layover {
