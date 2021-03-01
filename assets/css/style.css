@@ -1,3 +1,5 @@
+/* GENERAL */
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -6,4 +8,94 @@
 
 body{
   font-family: 'Nerko One', cursive;
+  background-color: #ADD8E6;
 }
+
+.clearfix{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 65%;
+  margin: 10px auto;
+  /* background-color: blue; */
+}
+
+/* /GENERAL */
+
+/* HEADER */
+
+header h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5.5em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+/* /HEADER */
+
+/* MAIN */
+
+.table{
+  width: 100%;
+  /* height: 500px;
+  background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.row{
+  width: 100%;
+  /* background-color: seagreen; */
+  margin-bottom: 15px;
+}
+
+.row .card{
+  width: calc(100% / 4 - 14px);
+  margin: 7px;
+  background-color: white;
+  float: left;
+  border-radius: 2%;
+  padding: 2%;
+  text-align: center;
+  font-size: 2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%; 
+}
+
+.card:hover{
+  display: initial;
+}
+
+.layover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/pattern.png);
+  background-size:contain;
+  border-radius: 2%;
+}
+
+.card:hover .layover{
+  display: none;
+}
+
+.card .card-text{
+  color: #E61986;
+}
+
+.card:hover .card-text{
+  color: #E67919;
+}
+
+
+
+/* MAIN */
