@@ -15,7 +15,7 @@ header, main{
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.clearfix {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -38,9 +38,9 @@ header h1 {
 /* /HEADER */
 
 /* MAIN */
-.table {
+/* .table {
   width: 100%;
-}
+} */
 
 .row {
   width: 100%;
@@ -83,7 +83,6 @@ header h1 {
 .card:hover .layover {
   display: none;
 }
-
 
 .card:hover .card-text {
   color: #e67919;
